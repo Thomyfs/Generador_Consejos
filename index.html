@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Google Fonts: Manrope (peso 800) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="advice-title">
+            CONSEJO #<span id="advice-id">--</span>
+        </h1>
+        <q id="advice-text" class="advice-quote">
+            Cargando consejo...
+        </q>
+        <picture class="divider">
+            <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+            <img src="./images/pattern-divider-mobile.svg" alt="divisoria">
+        </picture>
+        <button id="dice-btn" class="dice-button" aria-label="Generar nuevo consejo">
+            <img src="./images/icon-dice.svg" alt="icono dado">
+        </button>
+    </main>
+    <!-- Pie de página -->
+    <footer class="attribution">
+        Desafío de <a href="https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm" target="_blank">Frontend Mentor</a>. 
+        Desarrollado por <a href="#">Thomas Esteban Forero Soto, Pablo Andres Lesmes Calderon, Santiago Parrado Cifuentes</a>.
+    </footer>
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

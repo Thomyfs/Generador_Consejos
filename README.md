@@ -1,0 +1,2 @@
+# Aplicacion de consejos
+Desarrollo de una plataforma simple desarrollada con HTML, CSS y JavaScript que se conecta con una API para generar consejos aleatorios cada vez que el usuario presiona el botón para generar consejos.
