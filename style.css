@@ -1,0 +1,133 @@
+/* ====== Variables (colores y fuente de la guía de estilo de Frontend Mentor) ====== */
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --font: 'Manrope', sans-serif;
+}
+
+/* ====== Reset básico ====== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    font-family: var(--font);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--light-cyan);
+    padding: 1rem;
+}
+
+/* ====== Tarjeta ====== */
+main {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    padding: 2.5rem 1.5rem 4.5rem;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.advice-title {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    color: var(--neon-green);
+    margin-bottom: 1.5rem;
+}
+
+.advice-quote {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.35;
+    quotes: "\201C" "\201D";
+    min-height: 6.5rem;
+}
+
+.advice-quote::before { content: open-quote; }
+.advice-quote::after  { content: close-quote; }
+
+/* ====== Divisor ====== */
+.divider {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.divider img {
+    width: 100%;
+    max-width: 444px;
+    height: auto;
+}
+
+/* ====== Botón del dado ====== */
+.dice-button {
+    position: absolute;
+    left: 50%;
+    bottom: -32px;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.dice-button:hover,
+.dice-button:focus-visible {
+    box-shadow: 0 0 40px var(--neon-green);
+    outline: none;
+}
+
+.dice-button:disabled {
+    cursor: wait;
+    opacity: 0.7;
+}
+
+.dice-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ====== Pie de página ====== */
+.attribution {
+    margin-top: 5rem;
+    font-size: 11px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.attribution a {
+    color: var(--neon-green);
+}
+
+/* ====== Escritorio ====== */
+@media (min-width: 768px) {
+    main {
+        padding: 3rem 3rem 4.5rem;
+    }
+
+    .advice-quote {
+        font-size: 28px;
+    }
+}
